@@ -3,9 +3,7 @@ import random
 from collections import defaultdict, deque
 
 """
-Codecademy Pro Final Project supplementary code
-
-Markov Chain generator
+  Markov Chain generator
   This is a text generator that uses Markov Chains to generate text
   using a uniform distribution.
 

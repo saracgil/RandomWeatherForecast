@@ -10,7 +10,9 @@ from bs4 import BeautifulSoup
 
 def get_forecast():
     # first scrape the weather forecast
-    req = urllib.request.Request("http://forecast.weather.gov/MapClick.php?lat=40.6925&lon=-73.9904")
+    path='http://forecast.weather.gov/MapClick.php?'
+    req = urllib.request.Request(path+'lat=40.6925&lon=-73.9904')
+    # loop over lat and lon to scrape more pages
     with urllib.request.urlopen(req) as response:
         the_page = response.read()
     #define it as BeautifulSoup object
